@@ -1,0 +1,672 @@
+{
+	"info": {
+		"_postman_id": "2adc83a1-4e0c-4331-8cdd-54a27fc52f8b",
+		"name": "BookMyHall",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40651748",
+		"_collection_link": "https://www.postman.com/navigation-candidate-87097159/workspace/my-workspace/collection/40651748-2adc83a1-4e0c-4331-8cdd-54a27fc52f8b?action=share&source=collection_link&creator=40651748"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/login.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Durga Charan",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "9390440336",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "durgacharan844@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "is_admin",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/register.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"register.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addHall",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ecmascript",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "zuii",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "4.5",
+							"type": "text"
+						},
+						{
+							"key": "imageName",
+							"value": "hall1.jpg",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "A beautiful event hall",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Downtown",
+							"type": "text"
+						},
+						{
+							"key": "capacity",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "facility",
+							"value": "AC, Parking",
+							"type": "text"
+						},
+						{
+							"key": "services",
+							"value": "Catering, Decoration",
+							"type": "text"
+						},
+						{
+							"key": "availability",
+							"value": "yes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/addHall.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"addHall.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editProfile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "John Dlll",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john.doe@example.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1234567890",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/editProfile.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"editProfile.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchHalls",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/fetchHalls.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"fetchHalls.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changePassword",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "old_password",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/changePassword.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"changePassword.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reviews",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hall_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "jgook",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/reviews.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"reviews.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchReviews",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/BookMyHall/fetchReviews.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"fetchReviews.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchBookings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/fetchBookings.php?user_id=1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"fetchBookings.php"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveBooking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "hall_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "hall_name",
+							"value": "grand hall",
+							"type": "text"
+						},
+						{
+							"key": "booking_date",
+							"value": "2025-02-20\n",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "14:00:00",
+							"type": "text"
+						},
+						{
+							"key": "end_time",
+							"value": "18:00:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/saveBooking.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"saveBooking.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBooking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "booking_id",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "pending",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/updateBooking.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"updateBooking.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteHall",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hall_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/deleteHall.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"deleteHall.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateHall",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hall_id",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "New Hall Name",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "4.5",
+							"type": "text"
+						},
+						{
+							"key": "imageName",
+							"value": "hall_image.jpg",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Updated description",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "New Locationuuu",
+							"type": "text"
+						},
+						{
+							"key": "capacity",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "facility",
+							"value": "Updated Facility",
+							"type": "text"
+						},
+						{
+							"key": "services",
+							"value": "Updated Services",
+							"type": "text"
+						},
+						{
+							"key": "availability",
+							"value": "yes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/updateHall.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"updateHall.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchUsers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/BookMyHall/fetchUsers.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"fetchUsers.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBooking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "booking_id",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/BookMyHall/deleteBooking.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"BookMyHall",
+						"deleteBooking.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
